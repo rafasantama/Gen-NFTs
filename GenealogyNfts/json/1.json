@@ -1,0 +1,60 @@
+{
+  "name": "Genealogy ADN #31",
+  "description": "Check the history behind the product",
+  "external_url": "https://genealogylf.com/",
+  "image": "ipfs://Qmbf2aXn1pjUmv51QSeu1Us8rdqwEaeDLi1kUkwYMvv9g3/1.png",
+  "dna": "3101",
+  "edition": 1,
+  "date": 1647110362972,
+  "attributes": [
+    {
+      "trait_type": "Gen",
+      "value": "00742020"
+    },
+    {
+      "trait_type": "Colection",
+      "value": "Olga"
+    },
+    {
+      "trait_type": "Revitalized",
+      "value": "March 2022"
+    },
+    {
+      "trait_type": "CraftsWoman",
+      "value": "Gloria Tobón & Gladis Helena Tobón"
+    },
+    {
+      "trait_type": "Material Donated by",
+      "value": "Olga Velasquez"
+    },
+    {
+      "trait_type": "Date and place of Material Donation",
+      "value": "Rionegro, Antioquia 2020"
+    },
+    {
+      "trait_type": "Color 3",
+      "value": "UNDER MOUTH"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "GLASSES LOLITA"
+    },
+    {
+      "trait_type": "Nose",
+      "value": "FLAT PIERCING"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "CURLY BLOND EARRING M"
+    },
+    {
+      "trait_type": "Flag",
+      "value": "ROUND RED SKULL"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "NONE "
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

@@ -1,0 +1,51 @@
+{
+ "image": "ipfs://QmTqXy8ZaSonb5Z8jJPzxFLuChdEk8F4K3PJXQpVyHrB82/3101.png",
+ "name": "Genealogy ADN #31",
+ "description": "Check the history behind the product",
+ "external_url": "https://genealogylf.com/",
+ "dna": "3101",
+ "edition": 1,
+ "date": 1648062145164251000,
+ "attributes": [
+  {
+   "trait_type": "color1",
+   "value:": "#d0ad77"
+  },
+  {
+   "trait_type": "%color1",
+   "value:": "25.48"
+  },
+  {
+   "trait_type": "color2",
+   "value:": "#5c6969"
+  },
+  {
+   "trait_type": "%color2",
+   "value:": "17.38"
+  },
+  {
+   "trait_type": "color3",
+   "value:": "#997a54"
+  },
+  {
+   "trait_type": "%color3",
+   "value:": "23.69"
+  },
+  {
+   "trait_type": "color4",
+   "value:": "#8a9a97"
+  },
+  {
+   "trait_type": "%color4",
+   "value:": "16.08"
+  },
+  {
+   "trait_type": "color5",
+   "value:": "#3d403d"
+  },
+  {
+   "trait_type": "%color5",
+   "value:": "17.34"
+  }
+ ]
+}

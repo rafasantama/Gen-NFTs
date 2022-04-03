@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://genealogylf.com/wp-content/uploads/2021/02/cropped-Sin-titulo-3-02-1-32x32.png">
+  
+  <title>GenNFT Explorer</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.cdnfonts.com/css/special-elite" rel="stylesheet">
+   
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+
+
+
+  <div class="topnav">
+
+
+    <div>
+      <label class="search_label" for="">GenNFT: </label>
+      <input type="text" id="IDnumber" placeholder="ID">
+      <div class="search-btn">
+        <button class="button-82-pushable" role="button">
+          <span class="button-82-shadow"></span>
+          <span class="button-82-edge"></span>
+          <span class="button-82-front text" onclick="get_id()">
+            Buscar
+          </span>
+        </button>          
+      </div>
+    
+    </div>
+
+  </div>
+</head>
+<body>
+  <div class="preloader">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="centered-element">
+      <img src="./images/preloader-genealogy.gif" alt="">
+    </div>
+
+  </div>
+<br>
+<br>
+<br>
+  <div id="noID_text" class="centered-div">  
+    <h2 class="red-font-title centered-element">Consulta el GenNFT utilizando el ID</h2>
+  </div>
+  <div id="NFT_display" class="centered-div">
+    <div class="card-round main-div centered-element">
+
+      <div class="img-hov">
+        <img class="nft-img" src="./images/3101.png" alt="equilibrium-img">
+        
+      </div>
+      
+      <div class="text-center">
+        <h3>Gorro Olga</h3>
+
+        <h5>Entre puntadas entrelazamos recuerdos, sueños y emociones por un mundo más ecologico y justo.</h5>
+      </div>
+
+      
+      <div class="text-center">
+      <table class="styled-table">
+        <tr>
+          <th>Atributo</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Gen</td>
+          <td>00742020</td>
+        </tr>
+        <tr>
+          <td>Colection</td>
+          <td>Olga</td>
+        </tr>
+        <tr>
+          <td>Revitalized</td>
+          <td>March 2022</td>
+        </tr>
+        <tr>
+          <td>CraftsWoman</td>
+          <td>Gloria Tobón & Gladis Helena Tobón</td>
+        </tr>
+        <tr>
+          <td>Material Donated by</td>
+          <td>Olga Velasquez</td>
+        </tr>
+        <tr>
+          <td>Date and place of Material Donation</td>
+          <td>Rionegro, Antioquia 2020</td>
+        </tr>
+        <tr>
+          <td>color1</td>
+          <td style="color: #ecb36b;">#ecb36b</td>
+        </tr>
+        <tr>
+          <td>%color1</td>
+          <td style="color: #ecb36b;">30.78</td>
+        </tr>
+        <tr>
+          <td>color2</td>
+          <td style="color: #504546;">#504546</td>
+        </tr>
+        <tr>
+          <td>%color2</td>
+          <td style="color: #504546;">27.37</td>
+        </tr>
+        <tr>
+          <td>color3</td>
+          <td style="color: #78767b;">#78767b</td>
+        </tr>
+        <tr>
+          <td>%color3</td>
+          <td style="color: #78767b;">19.33</td>
+        </tr>
+        <tr>
+          <td>color4</td>
+          <td style="color: #a9acaf;">#a9acaf</td>
+        </tr>
+        <tr>
+          <td>%color4</td>
+          <td style="color: #a9acaf;">11.54</td>
+        </tr>
+        <tr>
+          <td>color5</td>
+          <td style="color: #bc773a;">#bc773a</td>
+        </tr>
+        <tr>
+          <td>%color5</td>
+          <td style="color: #bc773a;">10.97</td>
+        </tr>
+      </table>
+      </div>
+
+      <hr>
+      <div class="centered-div">
+        <p style="color:#ff5531;"> Owner:  </p>
+      </div>
+      <div class="centered-div">
+        <span class="name">0xE4783...A4180ec</span>
+      </div>
+      
+    </div>
+  </div>
+
+  
+</body>
+</html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="./js/web3bundle.js"></script>
+<script src="./js/preloader.js"></script>
+<script src="./js/readURL.js"></script>
+<script src="./js/get_ID.js"></script>
+
