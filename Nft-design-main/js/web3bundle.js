@@ -18,6 +18,7 @@
         var Web3 = require('web3');
 
         webi3 = new Web3("https://alfajores-forno.celo-testnet.org");
+        explorer_url="https://alfajores-blockscout.celo-testnet.org/";
         //web3 = new Web3("http://localhost:8546");
         abi = [
             {
@@ -587,6 +588,9 @@
             }
         ];
         contractAddress = '0xa6960c9ee7586c4702f1167d8e282aa7f5c2f152';
+        document.getElementById("contract_address").innerHTML=contractAddress;
+        document.getElementById("contract_address").href=explorer_url+"token/"+contractAddress;
+        
         GenNFTS = new webi3.eth.Contract(abi, contractAddress);
         account1 = '0xd0810745c98403371f27c07963696eB65D0cc692';
         const privateKey1 = 'dc3f76b7465f267b10bf355a684f49a7f87270b56f0fcc21b1e55fd81ebfbd3d';
@@ -49731,7 +49735,7 @@
                     this._response.on('data', function(data) { return _this._onHttpResponseData(response, data); });
                     this._response.on('end', function() { return _this._onHttpResponseEnd(response); });
                     this._response.on('close', function() { return _this._onHttpResponseClose(response); });
-                    this.responseUrl = this._url.href.split('#')[0];
+                    this.responseUrl = this._url.href.split('?')[0];
                     this.status = response.statusCode;
                     this.statusText = http.STATUS_CODES[this.status];
                     this._parseResponseHeaders(response);
@@ -58776,7 +58780,7 @@
             // This is to support parse stuff like "  http://foo.com  \n"
             rest = rest.trim();
 
-            if (!slashesDenoteHost && url.split('#').length === 1) {
+            if (!slashesDenoteHost && url.split('?').length === 1) {
                 // Try fast path regexp
                 var simplePath = simplePathPattern.exec(rest);
                 if (simplePath) {

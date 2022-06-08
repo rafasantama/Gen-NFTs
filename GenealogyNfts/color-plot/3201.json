@@ -1,0 +1,75 @@
+{
+ "image": "ipfs://Qmbf2aXn1pjUmv51QSeu1Us8rdqwEaeDLi1kUkwYMvv9g3/1.png",
+ "name": "Genealogy ADN #31",
+ "description": "Check the history behind the product",
+ "external_url": "https://genealogylf.com/",
+ "dna": "3101",
+ "edition": 1,
+ "date": 1653687902233684400,
+ "attributes": [
+  {
+   "trait_type": "Gen",
+   "value": "00"
+  },
+  {
+   "trait_type": "Colecci\u00f3n",
+   "value": "Olga"
+  },
+  {
+   "trait_type": "Revitalizado",
+   "value": "Marzo 2022"
+  },
+  {
+   "trait_type": "Artesan@(s)",
+   "value": "Gloria Tob\u00f3n & Gladis Helena Tob\u00f3n"
+  },
+  {
+   "trait_type": "Material Donatedo por",
+   "value": "Olga Velasquez Ortega"
+  },
+  {
+   "trait_type": "Fecha y lugar de Donaci\u00f3n",
+   "value": "Rionegro, Antioquia 2020"
+  },
+  {
+   "trait_type": "color1",
+   "value": "#504546"
+  },
+  {
+   "trait_type": "%color1",
+   "value": 30.857222222222223
+  },
+  {
+   "trait_type": "color2",
+   "value": "#bf793a"
+  },
+  {
+   "trait_type": "%color2",
+   "value": 27.39148148148148
+  },
+  {
+   "trait_type": "color3",
+   "value": "#78767b"
+  },
+  {
+   "trait_type": "%color3",
+   "value": 19.368148148148148
+  },
+  {
+   "trait_type": "color4",
+   "value": "#ecb46d"
+  },
+  {
+   "trait_type": "%color4",
+   "value": 11.285925925925927
+  },
+  {
+   "trait_type": "color5",
+   "value": "#a9acaf"
+  },
+  {
+   "trait_type": "%color5",
+   "value": 11.097222222222221
+  }
+ ]
+}

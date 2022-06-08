@@ -31,6 +31,12 @@ body{
     padding: 3% !important;
 }
 
+.explorer-div{
+  background-color: #fff0de;
+  margin: 5%;
+  padding: 3% !important;
+}
+
 .inner{
     position: absolute;
     width: 88%;
@@ -65,6 +71,7 @@ img{
     width: 50%;
     box-shadow: 10px 10px 20px -13px #623600 !important;
     margin: 3%;
+    transition: 0.5s;
 }
 .nft-img:hover {
   transform: scale(1.1) !important;
@@ -232,6 +239,10 @@ body {
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
+  .main-div{
+    width: 92% !important;
+    margin-top: 40%;
+  }
 }
 
 
@@ -249,6 +260,22 @@ body {
     -webkit-box-shadow: 17px 19px 25px -13px #623600 !important;
     -moz-box-shadow: 17px 19px 25px -13px #623600 !important;
     box-shadow: 17px 19px 25px -13px #623600 !important;
+}
+
+.card-round-explorer {
+  border-radius: 25px;
+  padding: 10px;
+  opacity: 0.85;
+  transition: 0.5s;
+  box-shadow: 10px 10px 20px -13px #623600 !important;
+}
+
+.card-round-explorer:hover {
+  transform: scale(1.01) !important;
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -webkit-box-shadow: 17px 19px 25px -13px #623600 !important;
+  -moz-box-shadow: 17px 19px 25px -13px #623600 !important;
+  box-shadow: 17px 19px 25px -13px #623600 !important;
 }
 
 .styled-table {
@@ -364,6 +391,7 @@ body {
     font-size: 1.25rem;
     padding: 12px 42px;
   }
+
 }
 
 .button-82-pushable:hover {
@@ -480,4 +508,52 @@ body {
   padding-top: 100px;
   margin: 50px;
   line-height: 150%;
+}
+
+
+.address {
+  text-align: center;
+  color: #623600 !important;
+  margin: 4px;
+  word-wrap: break-word !important;
+}
+.bash h3 {
+  font-size: 20px;
+  margin: 10px;
+}
+table.cards {
+  background-color: transparent;
+}
+
+/*--[  This does the job of making the table rows appear as cards ]----------------*/
+.cards tbody img {
+  height: 100px;
+  
+}
+.cards tbody tr {
+  float: left;
+  margin: 10px;
+  border: 1px solid #aaa;
+  border-radius: 50px;
+  background-color: #ffffff !important;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.cards tbody tr:hover {
+  transform: scale(1.05) !important;
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -webkit-box-shadow: 17px 19px 25px -13px #623600 !important;
+  -moz-box-shadow: 17px 19px 25px -13px #623600 !important;
+  box-shadow: 17px 19px 25px -13px #623600 !important;
+}
+.cards tbody td {
+  display: block;
+  width: 330px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cards thead{
+  display: none;
 }

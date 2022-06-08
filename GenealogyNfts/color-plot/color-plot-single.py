@@ -11,7 +11,6 @@ image_name='gen1.jpeg'
 image = cv2.imread(image_name)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 metadata={}
-atributes={}
 metadata['image']='ipfs://'
 metadata['name']="Genealogy ADN #31"
 metadata['description']="Check the history behind the product"
@@ -21,6 +20,12 @@ metadata['dna']="3101"
 metadata['edition']=1
 metadata['date']=time.time_ns()
 metadata['attributes']=[]
+metadata['attributes'].append({'trait_type': 'Gen','value': '00'})
+metadata['attributes'].append({'trait_type': "Colección",'value': 'Olga'})
+metadata['attributes'].append({'trait_type': 'Revitalizado','value': 'Marzo 2022'})
+metadata['attributes'].append({'trait_type': 'Artesan@(s)','value': "Gloria Tobón & Gladis Helena Tobón"})
+metadata['attributes'].append({'trait_type': 'Material Donatedo por','value': 'Olga Velasquez Ortega'})
+metadata['attributes'].append({'trait_type': 'Fecha y lugar de Donación','value': 'Rionegro, Antioquia 2020'})
 plt.imshow(image)
 
 def rgb_to_hex(rgb_color):

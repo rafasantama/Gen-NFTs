@@ -11,6 +11,7 @@
   <link href="http://fonts.cdnfonts.com/css/special-elite" rel="stylesheet">
    
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
 
   <div class="topnav">
 
-
+    
     <div>
       <label class="search_label" for="">GenNFT: </label>
       <input type="text" id="IDnumber" placeholder="ID">
@@ -31,7 +32,7 @@
           <span class="button-82-shadow"></span>
           <span class="button-82-edge"></span>
           <span class="button-82-front text" onclick="get_id()">
-            Buscar
+            Ver NFT
           </span>
         </button>          
       </div>
@@ -56,92 +57,41 @@
 <br>
   <div id="noID_text" class="centered-div">  
     <h2 class="red-font-title centered-element">Consulta el GenNFT utilizando el ID</h2>
+    <div id="NFT_table_card" style="display:none;" class="card-round-explorer explorer-div centered-element">
+      <button style="display: none;" id="btToggleDisplay" class="btn btn-info">Ver Modo Tarjetas</button>
+      <table id="all_NFTs" >
+
+      </table>      
+    </div>
+
   </div>
-  <div id="NFT_display" class="centered-div">
+  <div id="noIDcreated" class="centered-div" style="display: none;">  
+    <h2 class="red-font-title centered-element">ID consulta no existe, intenta con otro</h2>
+  </div>
+  <div id="NFT_display" style="display: none;" class="centered-div">
     <div class="card-round main-div centered-element">
 
       <div class="img-hov">
-        <img class="nft-img" src="./images/3101.png" alt="equilibrium-img">
+        <img id="nft_img" class="nft-img" width="100%" height="auto" alt="nft image error fro ipfs retry">
         
       </div>
       
       <div class="text-center">
-        <h3>Gorro Olga</h3>
+        <h3 id="nft_name">Nombre:</h3>
 
-        <h5>Entre puntadas entrelazamos recuerdos, sueños y emociones por un mundo más ecologico y justo.</h5>
+        <h5 id="nft_description">Descripción: </h5>
       </div>
 
       
       <div class="text-center">
       <table class="styled-table">
-        <tr>
-          <th>Atributo</th>
-          <th>Valor</th>
-        </tr>
-        <tr>
-          <td>Gen</td>
-          <td>00742020</td>
-        </tr>
-        <tr>
-          <td>Colection</td>
-          <td>Olga</td>
-        </tr>
-        <tr>
-          <td>Revitalized</td>
-          <td>March 2022</td>
-        </tr>
-        <tr>
-          <td>CraftsWoman</td>
-          <td>Gloria Tobón & Gladis Helena Tobón</td>
-        </tr>
-        <tr>
-          <td>Material Donated by</td>
-          <td>Olga Velasquez</td>
-        </tr>
-        <tr>
-          <td>Date and place of Material Donation</td>
-          <td>Rionegro, Antioquia 2020</td>
-        </tr>
-        <tr>
-          <td>color1</td>
-          <td style="color: #ecb36b;">#ecb36b</td>
-        </tr>
-        <tr>
-          <td>%color1</td>
-          <td style="color: #ecb36b;">30.78</td>
-        </tr>
-        <tr>
-          <td>color2</td>
-          <td style="color: #504546;">#504546</td>
-        </tr>
-        <tr>
-          <td>%color2</td>
-          <td style="color: #504546;">27.37</td>
-        </tr>
-        <tr>
-          <td>color3</td>
-          <td style="color: #78767b;">#78767b</td>
-        </tr>
-        <tr>
-          <td>%color3</td>
-          <td style="color: #78767b;">19.33</td>
-        </tr>
-        <tr>
-          <td>color4</td>
-          <td style="color: #a9acaf;">#a9acaf</td>
-        </tr>
-        <tr>
-          <td>%color4</td>
-          <td style="color: #a9acaf;">11.54</td>
-        </tr>
-        <tr>
-          <td>color5</td>
-          <td style="color: #bc773a;">#bc773a</td>
-        </tr>
-        <tr>
-          <td>%color5</td>
-          <td style="color: #bc773a;">10.97</td>
-        </tr>
+        <tbody  id="attribute_table">
+          <tr>
+            <th>Atributo</th>
+            <th>Valor</th>
+          </tr>
+        </tbody>
+
       </table>
       </div>
 
@@ -149,8 +99,15 @@
       <div class="centered-div">
         <p style="color:#ff5531;"> Owner:  </p>
       </div>
+      <div >
+        <a  class="address" target="_blank" id="owner_address">0x...</a>
+      </div>
+      <br>
       <div class="centered-div">
-        <span class="name">0xE4783...A4180ec</span>
+        <p style="color:#ff5531;"> Smart Contract:  </p>
+      </div>
+      <div>
+        <a class="address" target="_blank" id="contract_address">0x...</a>
       </div>
       
     </div>
@@ -160,9 +117,14 @@
 </body>
 </html>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src="sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="./js/web3bundle.js"></script>
 <script src="./js/preloader.js"></script>
+<script src="./js/all_NFTs_table.js"></script>
 <script src="./js/readURL.js"></script>
 <script src="./js/get_ID.js"></script>
+
 
